@@ -1,14 +1,21 @@
 #if UNITY_5_3_OR_NEWER
 #define NOESIS
 using Noesis;
+using System.IO;
 using System.Windows.Input;
 using UnityEngine;
 #else
 using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Markup;
 #endif
+
+namespace Noesis
+{
+}
 
 namespace NoesisStudy
 {
@@ -68,13 +75,17 @@ namespace NoesisStudy
             public void Execute(object parameter)
             {
 #if NOESIS
-            Debug.Log("MyCommand Execute");
+                var filePath = UnityEngine.Application.dataPath;
+#else
+                var filePath = "../../../Assets";
 #endif
+                var str = File.ReadAllText(filePath + "/NewButton.xaml");
+                object button = XamlReader.Parse(str);
 
-                var path = "Assets/NewButton.xaml";
-                var page = Application.LoadComponent(new System.Uri(path, System.UriKind.Relative));
                 var finded = NoesisStudyMainView.inst.FindName("Container") as StackPanel;
-                finded.Children.Add(page as UIElement);
+                finded.Children.Add(button as UIElement);
+
+
             }
         }
     }
