@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoesisStudy-blend", "NoesisStudy-blend.csproj", "{B644A01B-FC93-4525-92C8-DD03F91DAB70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B644A01B-FC93-4525-92C8-DD03F91DAB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B644A01B-FC93-4525-92C8-DD03F91DAB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B644A01B-FC93-4525-92C8-DD03F91DAB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B644A01B-FC93-4525-92C8-DD03F91DAB70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B47B32F8-0B7F-4A7E-BB32-4A1C47103654}
+	EndGlobalSection
+EndGlobal
