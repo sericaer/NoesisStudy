@@ -12,6 +12,10 @@
 /Release/
 /Blend/bin/
 /Blend/obj/
+/DynamicButton/bin/
+/DynamicButton/obj/
+/Packages/PropertyChanged.Fody.3.4.0/
+/Packages/Fody.6.5.1/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta

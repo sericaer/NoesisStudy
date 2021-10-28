@@ -2,11 +2,13 @@
 #define NOESIS
 using Noesis;
 using System.IO;
+using System.Reflection;
 using System.Windows.Input;
 using UnityEngine;
 #else
 using System;
 using System.IO;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -75,17 +77,21 @@ namespace NoesisStudy
             public void Execute(object parameter)
             {
 #if NOESIS
-                var filePath = UnityEngine.Application.dataPath;
+                var filePath = UnityEngine.Application.streamingAssetsPath;
 #else
-                var filePath = "../../../Assets";
+                var filePath = "../../../Assets/StreamingAssets";
 #endif
-                var str = File.ReadAllText(filePath + "/NewButton.xaml");
-                object button = XamlReader.Parse(str);
+                var str = File.ReadAllText(filePath + "/DynamicButtonCtrl.xaml");
+                var button = XamlReader.Parse(str) as FrameworkElement;
 
                 var finded = NoesisStudyMainView.inst.FindName("Container") as StackPanel;
-                finded.Children.Add(button as UIElement);
+                finded.Children.Add(button);
 
+                var asb = Assembly.LoadFrom(filePath + "/DynamicButton.dll");
+                var btnType = asb.GetType("DynamicButton.DynamicButtonCtrl");
 
+                var btn = System.Activator.CreateInstance(btnType);
+                button.DataContext = btn;
             }
         }
     }
