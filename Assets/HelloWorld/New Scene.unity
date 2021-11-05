@@ -219,11 +219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29355477be96127469aed699dd82b4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xaml: {fileID: -8414808784256213763, guid: 6ea9889d7ef37614884b1f5f078f236d, type: 3}
+  _xaml: {fileID: -8414808784256213763, guid: 6550b5c9feb89a542adc85e535390bdc, type: 3}
   _texture: {fileID: 0}
-  _isPPAAEnabled: 1
+  _isPPAAEnabled: 0
   _tessellationMaxPixelError: 0.4
-  _renderFlags: 0
+  _renderFlags: 16
   _continuousRendering: 1
   _enableExternalUpdate: 0
   _enableKeyboard: 1
