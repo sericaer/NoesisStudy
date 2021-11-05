@@ -59,6 +59,9 @@
     <Compile Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\DynamicButton\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Assets\HelloWorld\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
@@ -74,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\DynamicButton\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Assets\HelloWorld\MainView.xaml">
