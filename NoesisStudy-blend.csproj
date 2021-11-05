@@ -56,8 +56,11 @@
     <ApplicationDefinition Include="Blend\App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Compile Include="Assets\DynamicButtonFromStreamingAssets\NoesisStudyMainView.xaml.cs">
-      <DependentUpon>NoesisStudyMainView.xaml</DependentUpon>
+    <Compile Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\HelloWorld\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Blend\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -70,7 +73,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Assets\DynamicButtonFromStreamingAssets\NoesisStudyMainView.xaml">
+    <Page Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\HelloWorld\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

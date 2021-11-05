@@ -15,20 +15,16 @@ using System.Windows.Input;
 using System.Windows.Markup;
 #endif
 
-namespace Noesis
-{
-}
-
-namespace NoesisStudy
+namespace NoesisStudy.DynamicButtonFromStreamingAssets
 {
     /// <summary>
     /// Interaction logic for NoesisStudyMainView.xaml
     /// </summary>
-    public partial class NoesisStudyMainView : UserControl
+    public partial class MainView : UserControl
     {
-        public static NoesisStudyMainView inst;
+        public static MainView inst;
 
-        public NoesisStudyMainView()
+        public MainView()
         {
             inst = this;
 
@@ -84,7 +80,7 @@ namespace NoesisStudy
                 var str = File.ReadAllText(filePath + "/DynamicButtonCtrl.xaml");
                 var button = XamlReader.Parse(str) as FrameworkElement;
 
-                var finded = NoesisStudyMainView.inst.FindName("Container") as StackPanel;
+                var finded = MainView.inst.FindName("Container") as StackPanel;
                 finded.Children.Add(button);
 
                 
