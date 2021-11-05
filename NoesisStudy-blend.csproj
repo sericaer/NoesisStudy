@@ -56,6 +56,9 @@
     <ApplicationDefinition Include="Blend\App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="Assets\ButtonImage\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Assets\ButtonImage\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Assets\DynamicButtonFromStreamingAssets\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -85,6 +91,11 @@
     <Page Include="Assets\HelloWorld\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ButtonImage\flower.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
