@@ -5,7 +5,10 @@
     <StackPanel>
       <TextBlock Text="Hello World" FontSize="30" Foreground="White"/>
             <Button Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="290" Height="80">
-                <Image Source="flower.jpg"  Stretch="Fill"/>
+                <Grid>
+                    <Image Source="flower.jpg"  Stretch="Fill"/>
+                    <TextBlock Text="Click Here" VerticalAlignment="Center"  HorizontalAlignment="Center" FontSize="18" />
+                </Grid>
             </Button>
      </StackPanel>
   </Border>
