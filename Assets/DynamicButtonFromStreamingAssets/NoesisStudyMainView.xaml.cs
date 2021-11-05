@@ -87,7 +87,8 @@ namespace NoesisStudy
                 var finded = NoesisStudyMainView.inst.FindName("Container") as StackPanel;
                 finded.Children.Add(button);
 
-                var asb = Assembly.LoadFrom(filePath + "/DynamicButton.dll");
+                
+                var asb = Assembly.Load(File.ReadAllBytes(filePath + "/DynamicButton.dll"));
                 var btnType = asb.GetType("DynamicButton.DynamicButtonCtrl");
 
                 var btn = System.Activator.CreateInstance(btnType);

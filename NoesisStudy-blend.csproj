@@ -56,16 +56,11 @@
     <ApplicationDefinition Include="Blend\App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Compile Include="Assets\DynamicButtonFromStreamingAssets\NoesisStudyMainView.xaml.cs">
+      <DependentUpon>NoesisStudyMainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Blend\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="Assets\NoesisStudyMainView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="Assets\NoesisStudyMainView.xaml.cs">
-      <DependentUpon>NoesisStudyMainView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -73,6 +68,11 @@
     <PackageReference Include="Noesis.GUI.Extensions">
       <Version>3.0.*</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Assets\DynamicButtonFromStreamingAssets\NoesisStudyMainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
