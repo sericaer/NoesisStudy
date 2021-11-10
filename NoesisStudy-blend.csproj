@@ -31,8 +31,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -99,6 +99,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\ButtonImageFromStreamingAssets\flower.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\ButtonImage\flower.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

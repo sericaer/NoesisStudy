@@ -5,22 +5,21 @@
     <Border Background="DodgerBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="50,20">
         <Border.Resources>
             <Style TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+                <Setter Property="Template">
+                    <Setter.Value>
                         <ControlTemplate TargetType="Button">
                             <Grid>
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
                                 <Border Background="{TemplateBinding Background}" 
                                         BorderBrush="{TemplateBinding BorderBrush}" 
                                         BorderThickness="{TemplateBinding BorderThickness}">
                                     <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          Margin="{TemplateBinding Padding}" 
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
-                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
-                                          RecognizesAccessKey="True"/>
+                                          Margin="{TemplateBinding Padding}" 
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                                 </Border>
-
                                 <Rectangle x:Name="overlay"/>
                             </Grid>
                             <ControlTemplate.Triggers>
@@ -39,23 +38,11 @@
         </Border.Resources>
         <StackPanel>
             <TextBlock Text="Hello World" FontSize="30" Foreground="White"/>
-            <Button Width="200" Height="60"  Content="123" Foreground="White" BorderBrush="#00000000">
+            <Button Width="200" Height="60"  Content="123" Foreground="White">
                 <Button.Background>
                     <ImageBrush ImageSource="flower.jpg"/>
                 </Button.Background>
             </Button>
-            <!--<Button HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Grid>
-                    <Image Source="flower.jpg" />
-                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Disconnect from Server</TextBlock>
-                    <Rectangle>
-                        <Rectangle.Fill>
-                            <SolidColorBrush Color="#4CFF0000"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </Grid>
-            </Button>-->
-
         </StackPanel>
     </Border>
 </UserControl>
