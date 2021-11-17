@@ -71,6 +71,9 @@
     <Compile Include="Assets\HelloWorld\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\UseCustomControl\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Blend\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -96,6 +99,10 @@
     </Page>
     <Page Include="Assets\HelloWorld\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\UseCustomControl\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
