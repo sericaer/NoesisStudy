@@ -113,5 +113,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CustomControls\CustomControls.csproj">
+      <Project>{017fa4a9-9801-479b-9248-acb51d7ab84f}</Project>
+      <Name>CustomControls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

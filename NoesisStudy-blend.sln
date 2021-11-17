@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoesisStudy-blend", "Noesis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicButton", "DynamicButton\DynamicButton.csproj", "{7F2BE52A-7563-4872-BFB5-DEA20FD08B7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomControls\CustomControls.csproj", "{017FA4A9-9801-479B-9248-ACB51D7AB84F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{7F2BE52A-7563-4872-BFB5-DEA20FD08B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2BE52A-7563-4872-BFB5-DEA20FD08B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2BE52A-7563-4872-BFB5-DEA20FD08B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017FA4A9-9801-479B-9248-ACB51D7AB84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017FA4A9-9801-479B-9248-ACB51D7AB84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017FA4A9-9801-479B-9248-ACB51D7AB84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017FA4A9-9801-479B-9248-ACB51D7AB84F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
